@@ -15,29 +15,34 @@
 <body>
 
     <header>
-        <div class="logo">
-            <img class="image-logo" src="images/Logo.png">
-        </div>
-        
 
-        <div id="menu-mobile">
-            <img src="images/image-menu-hamburguer.png">
-        </div>
+        <div class="container header-inner"> 
 
-        <div id="menu-desktop">
-            <nav class="main-nav">
-                <ul>
-                    <il><strong>About</strong></il>
-                    <il>Blog</il>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+            <div class="logo">
+                <img class="image-logo" src="images/Logo.png">
+            </div>
+            
+    
+            <div id="menu-mobile">
+                <img src="images/image-menu-hamburguer.png">
+            </div>
+    
+            <div id="menu-desktop">
+                <nav class="main-nav">
+                    <ul>
+                        <il><strong>About</strong></il>
+                        <il>Blog</il>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+    
+                <nav class="user-nav">
+                    <ul>
+                        <il>Sign in</il>
+                    </ul>
+                </nav>
+            </div>
 
-            <nav class="user-nav">
-                <ul>
-                    <il>Sign in</il>
-                </ul>
-            </nav>
         </div>
 
     </header>
@@ -54,8 +59,8 @@
 
                 <div class="hero-input">
                     <form>
-                        <p>Enter email address</p>
-                        <button>Start 14 days Free Trial</button>
+                        <input type="text" class="box" id="email-start" name="email" value="Enter email address">
+                        <button class="box start-button">Start 14 days Free Trial</button>
                     </form>
                 </div>
 
@@ -65,36 +70,41 @@
 
         </section>
         
-        <section class="container overview-section">
+        <section class="overview-section">
 
-            <div class="overview-content">
-                <div class="overview-main">
-                    <p>PRODUCT OVERVIEW</p>
-                    <h1>Build Exclusively</h3>
+            <div class="container overview-inner">
+
+                <div class="overview-content">
+                    <div class="overview-main">
+                        <p class="box tag">PRODUCT OVERVIEW</p>
+                        <h1>Build Exclusively</h3>
+                    </div>
+    
+                    <div class="overview-text">
+                        <p>Donec bibendum, dui id ultrices molestie, neque neque porta felis, id viverra ligula justo interdum mi. Nunc malesuada, risus consec maximus consequat, purus enim ultricies nisi, quis ornare.</p>
+                    </div>
+                </div>
+    
+                <div class="overview-numbers"> 
+                    <div class="info-numbers">
+                        <h1>300+</h1>
+                        <p>PRODUCTS</p>
+                    </div>
+    
+                    <div class="info-numbers">
+                        <h1>85</h1>
+                        <p>WEB TEMPLATE</p>
+                    </div>
+    
+                    <div class="info-numbers">
+                        <h1>215</h1>
+                        <p id="version-mobile">MOBILE</p>
+                        <p id="version-desktop">MOBILE TEMPLATE</p>
+                    </div>
                 </div>
 
-                <div class="overview-text">
-                    <p>Donec bibendum, dui id ultrices molestie, neque neque porta felis, id viverra ligula justo interdum mi. Nunc malesuada, risus consec maximus consequat, purus enim ultricies nisi, quis ornare.</p>
-                </div>
             </div>
 
-            <div class="overview-numbers"> 
-                <div class="info-numbers">
-                    <h1>300+</h1>
-                    <p>PRODUCTS</p>
-                </div>
-
-                <div class="info-numbers">
-                    <h1>85</h1>
-                    <p>WEB TEMPLATE</p>
-                </div>
-
-                <div class="info-numbers">
-                    <h1>85</h1>
-                    <p id="version-mobile">MOBILE</p>
-                    <p id="version-desktop">MOBILE TEMPLATE</p>
-                </div>
-            </div>
 
         </section>
 
