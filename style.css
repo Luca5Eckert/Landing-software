@@ -153,7 +153,7 @@ p {
 }
 
 .overview-inner {
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 }
 
 .overview-content {
@@ -169,7 +169,7 @@ p {
     padding-top: 2rem;
 }
 
-.overview-main .tag {
+.tag {
     background-color: var(--lighter-color-green);
     padding: 0.5rem 0.4rem;
     padding-left: 0.4rem;
@@ -199,7 +199,6 @@ p {
 .overview-numbers {
     color: var(--primary-color);
     display: flex;
-    gap: 1rem;
     justify-content: start;
     gap: 2.5rem;
 }
@@ -219,26 +218,47 @@ p {
 /*TEAM_SECTION*/
 
 .team-section {
-    background-color: #FAFAFA;
+    background-color: #ffffff;
 }
 
 .brandings {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-areas:
+        "fedex amazon"
+        "google microsoft";
+    gap: 1rem;
     padding: 3.5rem 0;
-    align-content: stretch;
+    width: 99%;
+    background: radial-gradient(circle, #fafafa 0%, #ffffff 100%);
 }
 
 .branding {
-    padding: 1.5rem;
+    padding: 2rem 2rem;
     border-radius: 16px;
     background-color: var(--primary-color);
     box-shadow: #757B8A;
-    align-self: stretch;
-    max-width: 10rem;
-    height: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.branding img{
+    padding: 0;
+}
+
+
+#branding-amazon {
+    grid-area: amazon;
+}
+#branding-microsoft {
+    grid-area: microsoft;
+}
+#branding-fedex {
+    grid-area: fedex;
+}
+#branding-amazon {
+    grid-area: amazon;
 }
 
 #branding-ola {
@@ -247,4 +267,53 @@ p {
 
 #branding-oyo {
     display: none;
+}
+
+.container-team {
+    position: relative;
+    margin: 5rem 0;
+}
+
+.image-team {
+    height: 90%;
+}
+
+.card-team {
+    height: auto;
+    display: flex;
+    padding: 1rem ;
+    border-radius: 1rem;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    bottom: -1.5rem;
+    left: 40px;
+    background-color: var(--primary-color);
+    gap: 0.5rem;
+}
+
+.card-team img{
+    width: 5rem;
+}
+
+.team-title {
+    padding: 1rem 0;
+}
+
+.team-subheading {
+    padding-bottom: 1rem;
+}
+
+.team-text {
+    color: #757B8A;
+}
+
+/*ESTUDOS DE CASO*/
+.cases-studies-section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+     "text-case case-recovery"
+     "case-heart case-recovery";
+    
 }
