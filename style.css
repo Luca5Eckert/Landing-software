@@ -50,16 +50,17 @@ ul li {
 }
 
 h1 {
-   font-size:34px; 
+   font-size: clamp(0.7rem, 4.5vh, 4rem); 
    font-weight: bold;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: clamp(0.2rem, 5vh, 4.5rem);
+    overflow: hidden;
 }
 
 p {
-    font-size: 16px;
+    font-size: 2vh;
 }
 
 .box {
@@ -200,7 +201,8 @@ p {
     color: var(--primary-color);
     display: flex;
     justify-content: start;
-    gap: 2.5rem;
+    flex-wrap: wrap;
+    gap: 4vh;
 }
 
 .info-numbers h1 {
@@ -228,14 +230,14 @@ p {
     grid-template-areas:
         "fedex amazon"
         "google microsoft";
-    gap: 1rem;
-    padding: 3.5rem 0;
+    gap: 10%;
+    padding: 5% 0;
     width: 99%;
     background: radial-gradient(circle, #fafafa 0%, #ffffff 100%);
 }
 
 .branding {
-    padding: 2rem 2rem;
+    padding: 25% 25%;
     border-radius: 16px;
     background-color: var(--primary-color);
     box-shadow: #757B8A;
@@ -281,15 +283,16 @@ p {
 .card-team {
     height: auto;
     display: flex;
-    padding: 1rem ;
+    padding: 4%;
     border-radius: 1rem;
     height: auto;
     position: absolute;
     z-index: 10;
-    bottom: -1.5rem;
-    left: 40px;
+    bottom: -10%;
+    left: 10%;
     background-color: var(--primary-color);
     gap: 0.5rem;
+    overflow: hidden;
 }
 
 .card-team img{
@@ -310,10 +313,29 @@ p {
 
 /*ESTUDOS DE CASO*/
 .cases-studies-section {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     grid-template-areas: 
-     "text-case case-recovery"
-     "case-heart case-recovery";
-    
+     "text-case "
+     "case-heart "
+     "case-recovery";
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.cases-content {
+    grid-area: text-case;
+}
+
+#case-heart {
+    grid-area: case-heart;
+}
+
+#case-recovery {
+    grid-area: case-recovery;
+}
+
+#tag-case {
+    margin-bottom: 1rem;
 }
