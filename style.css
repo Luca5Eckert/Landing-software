@@ -218,14 +218,33 @@ p {
 
 /*TEAM_SECTION*/
 
-.branding {
+.team-section {
+    background-color: #FAFAFA;
+}
 
+.brandings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 3.5rem 0;
+    align-content: stretch;
+}
+
+.branding {
+    padding: 1.5rem;
+    border-radius: 16px;
+    background-color: var(--primary-color);
+    box-shadow: #757B8A;
+    align-self: stretch;
+    max-width: 10rem;
+    height: auto;
 }
 
 #branding-ola {
     display: none;
 }
 
-#branding-oya {
+#branding-oyo {
     display: none;
 }
