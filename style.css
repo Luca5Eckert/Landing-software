@@ -2,6 +2,7 @@
     --primary-color: #FFFFFF;
     --second-color: #243D31;
     --font-color: #101010;
+    --second-font-color: #757B8A;
     --tertiary: #31543B;
     --lighter-color-green: #E7FFD8;
     --text-green: #24AA4A;
@@ -55,7 +56,7 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(0.2rem, 5vh, 4.5rem);
+    font-size: clamp(0.2rem, 6.5vh, 4.5rem);
     overflow: hidden;
 }
 
@@ -136,7 +137,7 @@ p {
     background-color: #F3F4F8;
     padding: 1.2rem;
     font-size: 1rem;
-    color: #757B8A;
+    color: var(--second-font-color);
     margin-top: 1rem;
     padding-left: 1.55rem;
 }
@@ -241,7 +242,7 @@ p {
     padding: 25% 25%;
     border-radius: 16px;
     background-color: var(--primary-color);
-    box-shadow: #757B8A;
+    box-shadow: var(--second-font-color);
     align-content: center;
     justify-content: center;
 }
@@ -307,10 +308,13 @@ p {
 
 .team-subheading {
     padding-bottom: 1rem;
+    font-size: 2.7vh;
 }
 
 .team-text {
-    color: #757B8A;
+    color: var(--second-font-color);
+    font-size: 2.6vh;
+
 }
 
 /*ESTUDOS DE CASO*/
@@ -328,6 +332,17 @@ p {
 
 .cases-content {
     grid-area: text-case;
+    padding-bottom: 2rem;
+}
+
+.cases-content h2 {
+    padding-bottom: 1.5rem;
+}
+
+.cases-text {
+    width: 90%;
+    font-size: 2.4vh;
+    color: var(--second-font-color);
 }
 
 #case-heart {
@@ -341,4 +356,34 @@ p {
 #tag-case {
     margin-bottom: 1rem;
     text-align: center;
+}
+
+.case {
+    padding: 2vh 0;
+}
+
+.case-title {
+    font-size: 3.7vh;
+    padding: 1rem 0;
+}
+
+.learn-action {
+    display: flex;
+    width: 20vh;
+    padding: 2.2vh 0;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem #D9D9D9 solid;
+    border-radius: 2rem;
+}
+
+.learn-action p {
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+
+.case-recovery {
+    width: 100%;
+    height: auto;
 }
