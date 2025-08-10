@@ -520,5 +520,95 @@ p {
 
 .enterprise {
     padding: 1vh 0;
-    font-size: 2.5vh;
+    font-size: 3vh;
+    padding-left: 1vh;
 }
+
+
+/*footer*/
+
+.nav-container {
+    display: none;
+}
+
+.start-section {
+    text-align: center;
+    padding: 3vh 0;
+}
+
+.image-logo {
+    margin: 0 auto;
+    width: 15vh;
+    height: auto;
+    padding: 2.7vh 0;
+}
+
+
+.call-to-action p{
+    font-size: 3.2vh;
+    padding: 2vh 0;
+    font-weight: bold;
+}
+
+.button-get-start {
+    background-color: #31543B;
+    color: var(--primary-color);
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 10vh 0;
+}
+
+.subscribe-section h3 {
+    font-size: 5vh;
+    width: 60%;
+}
+
+.input-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#subscribe-email {
+    width: 85%;
+    color: var(--second-font-color);
+    border-radius: 0;
+    box-shadow: 0 4px 5px -2px rgba(0, 0, 0, 0.1);
+}
+
+#subscribe-submit {
+    width: 15%;
+    padding: 3vh 0;
+    border-radius: 10px 10px 0 0;
+    height: auto;
+    color: var(--primary-color);
+    background-color: var(--tertiary)
+}
+
+
+.footer-copyright-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5vh;
+    padding: 10vh 0;
+}
+
+.nav-conditions ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-social-media ul{
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+}
+
