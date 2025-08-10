@@ -74,6 +74,11 @@ p {
 
 }
 
+.second-text {
+    font-size: 2.7vh;
+    color: var(--second-font-color);
+}
+
 /*HEADER*/
 
 
@@ -107,6 +112,7 @@ p {
 .hero-text {
     text-align: center;
 }
+
 .hero-text h1 {
     padding: 0 1rem;
 }
@@ -311,11 +317,7 @@ p {
     font-size: 2.7vh;
 }
 
-.team-text {
-    color: var(--second-font-color);
-    font-size: 2.6vh;
 
-}
 
 /*ESTUDOS DE CASO*/
 .cases-studies-section {
@@ -337,12 +339,7 @@ p {
 
 .cases-content h2 {
     padding-bottom: 1.5rem;
-}
-
-.cases-text {
     width: 90%;
-    font-size: 2.4vh;
-    color: var(--second-font-color);
 }
 
 #case-heart {
@@ -369,8 +366,8 @@ p {
 
 .learn-action {
     display: flex;
-    width: 20vh;
-    padding: 2.2vh 0;
+    width: 26vh;
+    padding: 2.5vh 1vh;
     justify-content: center;
     align-items: center;
     border: 0.1rem #D9D9D9 solid;
@@ -380,10 +377,22 @@ p {
 .learn-action p {
     color: var(--second-color);
     font-weight: bold;
-    font-size: 2.3vh;
+    font-size: 2.6vh;
+    width: 70%;
+}
+
+.arrow-up {
+    width: 2.5vh;
+    height: auto;
 }
 
 .case-recovery {
     width: 100%;
     height: auto;
+}
+
+/*GOALS SECTION*/
+
+.goals-content {
+
 }
