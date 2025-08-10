@@ -37,7 +37,7 @@ img {
 
 
 .container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ ul li {
 }
 
 h1 {
-   font-size: clamp(0.7rem, 4.5vh, 4rem); 
+   font-size: clamp(0.7rem, 5.2vh, 4rem); 
    font-weight: bold;
 }
 
@@ -111,6 +111,10 @@ p {
 
 .hero-text {
     text-align: center;
+}
+
+.hero-text p {
+    font-size: 2.5vh;
 }
 
 .hero-text h1 {
@@ -394,5 +398,37 @@ p {
 /*GOALS SECTION*/
 
 .goals-content {
+    padding-top: 2vh;
+}
 
+.goals-content p{
+    padding: 3vh 0;
+}
+
+
+
+.about-section {
+    background-color: var(--second-color);
+}
+
+.about-section-inner{
+    padding-top: 7vh;
+    padding-bottom: 14vh;
+}
+
+.about-content h2 {
+    color: var(--primary-color);
+    padding: 4vh 0;
+    width: 80%;
+}
+
+.about-content p {
+    color: #D6D6D6;
+    padding-bottom: 4vh;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
