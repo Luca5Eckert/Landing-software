@@ -432,3 +432,93 @@ p {
     flex-direction: column;
     gap: 3vh;
 }
+
+.reviews-section {
+    padding: 10vh 0;
+}
+
+.reviews-content h2{
+    width: 70%;
+    font-size: 7vh;
+}
+
+.reviews-content p {
+    padding: 4vh 0;
+    font-size: 3.59vh;
+}
+
+.review-client img{
+    padding: 3vh 0;
+}
+
+.client-quote {
+}
+
+.open-quote {
+    width: 10vh;
+    height: auto;
+}
+
+.client-text {
+    font-weight: bold;
+    padding-bottom: 5vh;
+    font-size: 3.7vh ;
+}
+
+.client h4 {
+    font-size: 3.75vh;
+}
+
+.client p {
+    font-size: 3.4vh;
+    padding: 1.5vh 0;
+}
+
+.slide-bar {
+    width: 17vh;
+    height: auto;
+}
+
+.general-review {
+    padding: 10vh 0;
+}
+
+.general-review-content {
+    padding: 4vh 0;
+}
+
+.general-review-content h2{
+    width: 90%;
+    font-size: 7.5vh;
+}
+
+.general-review-content p{
+    font-size: 3.5vh;
+    padding: 4.5vh 0;
+}
+
+.classifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line {
+    background-color: #D6D6D6;
+    height: 20vh;
+    width: 0.02vh;
+}
+
+.classification {
+    height: 60%;
+}
+
+.stars {
+    font-size: 8vh;
+    padding-left: 1vh;
+}
+
+.enterprise {
+    padding: 1vh 0;
+    font-size: 2.5vh;
+}
