@@ -51,17 +51,27 @@ ul li {
 }
 
 h1 {
-   font-size: clamp(0.7rem, 5vi, 12rem); 
+   font-size: clamp(0.7rem, 9vi, 4rem); 
    font-weight: bold;
 }
 
 h2 {
-    font-size: clamp(0.2rem, 6.3vi, 3.5rem);
+    font-size: clamp(0.2rem, 10vi, 3rem);
     overflow: hidden;
 }
 
+h3 {
+    font-size: clamp(0.2rem, 6.5vi, 3rem);
+
+}
+
+h4 {
+    font-size: clamp(0.2rem, 4vi, 2rem);
+
+}
+
 p {
-    font-size: clamp(0.5rem,  2vi, 1.5rem);
+    font-size: clamp(0.5rem,  4.5vi, 1rem);
 }
 
 .box {
@@ -75,7 +85,7 @@ p {
 }
 
 .second-text {
-    font-size: clamp(0.2rem,  2.5vi, 5rem);
+    font-size: clamp(0.2rem,  4.5vi, 2rem);
     color: var(--second-font-color);
 }
 
@@ -90,11 +100,11 @@ p {
     padding-top: 0.5rem;
 }
 
-.logo {
-    width: 7.5rem;
-    height: auto;
-}
 
+.logo {
+    width: 7rem;
+    padding-top: 0.2rem;
+}
 
 #menu-desktop {
     display: none;
@@ -120,7 +130,6 @@ p {
 
 .hero-text p {
     padding: 1rem 0;
-    font-size: clamp(0.5rem, 2vi, 1.5rem);
 }
 
 
@@ -181,17 +190,18 @@ p {
 .overview-main {
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .tag {
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
     background-color: var(--lighter-color-green);
     font-weight: bold;
     color: var(--text-green);
-    font-size: clamp(0.5rem, 1.8vi, 2rem);
-    width: 30vi;
+    font-size: clamp(0.5rem, 3vi, 2rem);
     text-align: center;
+    align-self: flex-start;
 }
 
 .overview-main h1 {
@@ -201,7 +211,7 @@ p {
 
 .overview-text p{
     color: #E6E9ED;
-    font-weight: 300;
+    padding: 1rem 0;
 }
 
 
@@ -211,14 +221,21 @@ p {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 4vi;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
 }
 
-.info-numbers h1 {
-    font-size: 6vi;
+.info-numbers h1{
+    font-size: clamp(0.5rem, 7.4vi, 6.5rem);
 }
+
+.overview-text p{
+    font-size: clamp(0.5rem, 3.7vi, 2rem);
+}
+
 
 .info-numbers p {
-    font-size: 14px;
+    font-size: clamp(0.5rem, 3.5vi, 2rem);
 }
 
 #version-desktop {
@@ -239,9 +256,8 @@ p {
         "fedex amazon"
         "google microsoft";
     gap: 10%;
-    padding: 5vi 0;
+    padding: 2rem 0;
     padding-top: 10vi;
-    width: 99%;
     background: radial-gradient(circle, #f3f3f3 5%, #ffffff 75%);
 }
 
@@ -311,12 +327,12 @@ p {
 
 .team-title {
     padding: 1rem 0;
-    font-size: clamp(0.5rem, 6.2vi, 8vi);
+    font-size: clamp(0.5rem, 10vi, 5rem);
 }
 
 .team-subheading {
     padding-bottom: 1rem;
-    font-size: clamp(0.5rem, 2.5vi, 4rem);
+    font-size: clamp(0.5rem, 4.6vi, 3rem);
 }
 
 
@@ -345,6 +361,7 @@ p {
 
 #case-heart {
     grid-area: case-heart;
+    padding-top: 0;
 }
 
 #case-recovery {
@@ -357,49 +374,43 @@ p {
 }
 
 .case {
-    padding: 2vi 0;
+    padding: 2rem 0;
 }
 
 .case-title {
-    font-size: 3.7vi;
     padding: 1rem 0;
 }
 
 .learn-action {
-    display: flex;
-    width: 26vi;
-    padding: 2.5vi 1vi;
-    justify-content: center;
-    align-items: center;
+    display: inline-flex;
     border: 0.5px #D9D9D9 solid;
     border-radius: 2rem;
+    padding: 1rem 1.7rem;
+    gap: 1.2rem;
 }
 
 .learn-action p {
     color: var(--second-color);
     font-weight: bold;
-    font-size: 2.6vi;
-    width: 70%;
 }
 
 .arrow-up {
-    width: 2.5vi;
+    width: 0.75rem;
     height: auto;
 }
 
 .case-recovery {
-    width: 100%;
     height: auto;
 }
 
 /*GOALS SECTION*/
 
 .goals-content {
-    padding-top: 2vi;
+    padding: 3rem 0;
 }
 
 .goals-content h2 {
-    font-size: 5vi;
+    width: 95%;
 }
 
 .goals-content p{
@@ -443,15 +454,14 @@ p {
 
 .reviews-content h2{
     width: 70%;
-    font-size: 5vi;
 }
 
 .reviews-content p {
-    padding: 4vi 0;;
+    padding: 1rem 0;;
 }
 
-.review-client img{
-    padding: 3vi 0;
+.costumer {
+    padding: 4rem 0;
 }
 
 
@@ -462,40 +472,29 @@ p {
 
 .client-text {
     font-weight: bold;
-    padding-bottom: 5vi;
-    font-size: 2vi;
-}
-
-.client h4 {
-    font-size: 2.3vi;
+    padding-bottom: 2rem;
 }
 
 .client p {
-    font-size: 2.3vi;
-    padding: 1.5vi 0;
+    padding: 1rem 0;
 }
 
 .slide-bar {
-    width: 10vi;
+    width: 4rem;
     height: auto;
 }
 
 .general-review {
-    padding: 10vi 0;
+    padding: 2rem 0;
 }
 
 .general-review-content {
     padding: 4vi 0;
 }
 
-.general-review-content h2{
-    width: 90%;
-    font-size: 7.5vi;
-}
 
 .general-review-content p{
-    font-size: 3.5vi;
-    padding: 4.5vi 0;
+    padding: 2rem 0;
 }
 
 .classifications {
@@ -515,7 +514,7 @@ p {
 }
 
 .stars {
-    font-size: 8vi;
+    font-size: clamp(0.5rem, 8vi, 3rem);
     padding-left: 1vi;
 }
 
@@ -534,7 +533,7 @@ p {
 
 .start-section {
     text-align: center;
-    padding: 3vi 0;
+    padding: 2rem 1rem;
 }
 
 .image-logo {
@@ -546,7 +545,7 @@ p {
 
 
 .call-to-action p{
-    padding: 2vi 0;
+    padding: 3vi 0;
     font-weight: bold;
 }
 
@@ -566,8 +565,7 @@ p {
 }
 
 .subscribe-section h3 {
-    font-size: 5vi;
-    width: 60%;
+    width: 55%;
 }
 
 .input-email {
@@ -585,7 +583,7 @@ p {
 
 #subscribe-submit {
     width: 15%;
-    padding: 3vi 0;
+    padding: 1rem 0;
     border-radius: 10px 10px 0 0;
     height: auto;
     color: var(--primary-color);
@@ -633,6 +631,33 @@ p {
 /*DESKTOP*/
 @media(min-width:1200px){
     
+    h1 {
+        font-size: clamp(3rem, 5vi, 5rem);
+    }
+
+    h2 {
+        font-size: clamp(3rem, 5.5vi, 4.5rem);
+    }
+
+    p {
+        font-size: clamp(0.5rem,  4.5vi, 4rem);
+    }
+    
+    
+    .second-text {
+        font-size: clamp(0.2rem,  4vi, 1.5rem);
+        color: var(--second-font-color);
+    }
+    
+    .tag {
+        padding: 1rem 0.5rem;
+    }
+
+    .hero-image {
+        width: 80%;
+        margin: 0 auto;
+    }
+
     .header-inner {
         display: flex;
         flex-direction: row;
@@ -662,13 +687,16 @@ p {
 
     /*HERO*/
     .hero-content {
-        max-width: 60%;
-        margin: 0 auto;
-        padding-bottom: 5rem;
+        align-self: center;
+        width: 60rem;
+        padding: 5rem 0;
     }
 
     .hero-input form {
+        width: 50rem;
+        max-width: 60rem;
         flex-direction: row;
+        justify-content: start;
     }
 
     .email-start {
@@ -676,10 +704,7 @@ p {
         padding: 2rem 3rem;
     }
 
-    .start-button {
-        width: 15rem;
-        padding: 1rem 1rem;
-    }
+    
 
     .hero-text p {
         font-size: clamp(0.5rem, 1.5vi, 1.5rem);
@@ -700,6 +725,7 @@ p {
         flex-direction: row;
         justify-content: space-between;
         padding: 5vi 0;
+        gap: 5rem;
     }
 
     #version-mobile {
@@ -711,12 +737,13 @@ p {
     }
 
     .overview-main {
-        width: auto;
+        justify-content: space-between;
+        gap: 1rem;
     }
 
     .overview-text {
-        font-size: 12vi;
         align-self: flex-end;
+        max-width:50rem;
     }
 
     .overview-content p {
@@ -824,5 +851,43 @@ p {
 
     .goals-content p{
         width: 40%;
+    }
+
+    .goals-image {
+        padding: 2rem 4rem ;
+    }
+
+    .reviews-content {
+        display: flex;
+        flex-direction: row;
+        gap: 40rem;
+        justify-content: center;
+    }
+
+    .reviews-content .second-text {
+        padding:  0;
+        max-width: 40rem;
+    }
+
+    .review-client {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+        padding: 8rem 7rem;
+    }
+
+    .open-quote {
+        max-width: 5rem;
+    }
+
+    .client-text {
+        font-size: clamp(2.5rem, 5vi, 3rem);
+    }
+
+    .general-review {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 10rem;
     }
 }
