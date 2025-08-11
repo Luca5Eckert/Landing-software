@@ -51,17 +51,17 @@ ul li {
 }
 
 h1 {
-   font-size: clamp(0.7rem, 5.2vh, 10rem); 
+   font-size: clamp(0.7rem, 5vi, 12rem); 
    font-weight: bold;
 }
 
 h2 {
-    font-size: clamp(0.2rem, 6.5vh, 3.5rem);
+    font-size: clamp(0.2rem, 6.3vi, 3.5rem);
     overflow: hidden;
 }
 
 p {
-    font-size: clamp(0.5rem,  2vh, 1.5rem);
+    font-size: clamp(0.5rem,  2vi, 1.5rem);
 }
 
 .box {
@@ -75,7 +75,7 @@ p {
 }
 
 .second-text {
-    font-size: clamp(0.5rem,  2.7vh, 5rem);
+    font-size: clamp(0.2rem,  2.5vi, 5rem);
     color: var(--second-font-color);
 }
 
@@ -113,12 +113,14 @@ p {
     text-align: center;
 }
 
-.hero-text p {
-    font-size: 2.5vh;
-}
 
 .hero-text h1 {
     padding: 0 1rem;
+}
+
+.hero-text p {
+    padding: 1rem 0;
+    font-size: clamp(0.5rem, 2vi, 1.5rem);
 }
 
 
@@ -130,6 +132,7 @@ p {
 .hero-input form{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .start-button{
@@ -139,16 +142,18 @@ p {
     font-size: 1rem;
     font-weight: bold;
     align-self: center;
-    margin: 1rem 0;
 }
 
 #email-start {
     background-color: #F3F4F8;
+    width: 25rem;
     padding: 1.2rem;
     font-size: 1rem;
     color: var(--second-font-color);
     margin-top: 1rem;
     padding-left: 1.55rem;
+    max-width: 30rem;
+    margin: 0 auto;
 }
 
 .hero-image {
@@ -184,8 +189,8 @@ p {
     background-color: var(--lighter-color-green);
     font-weight: bold;
     color: var(--text-green);
-    font-size: clamp(0.5rem, 1.8vh, 2rem);
-    width: 30vh;
+    font-size: clamp(0.5rem, 1.8vi, 2rem);
+    width: 30vi;
     text-align: center;
 }
 
@@ -205,11 +210,11 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 4vh;
+    gap: 4vi;
 }
 
 .info-numbers h1 {
-    font-size: 6.5vh;
+    font-size: 6vi;
 }
 
 .info-numbers p {
@@ -234,8 +239,8 @@ p {
         "fedex amazon"
         "google microsoft";
     gap: 10%;
-    padding: 5vh 0;
-    padding-top: 10vh;
+    padding: 5vi 0;
+    padding-top: 10vi;
     width: 99%;
     background: radial-gradient(circle, #f3f3f3 5%, #ffffff 75%);
 }
@@ -306,12 +311,12 @@ p {
 
 .team-title {
     padding: 1rem 0;
-    font-size: clamp(0.5rem, 6.2vh, 8vh);
+    font-size: clamp(0.5rem, 6.2vi, 8vi);
 }
 
 .team-subheading {
     padding-bottom: 1rem;
-    font-size: clamp(0.5rem, 2.5vh, 4vh);
+    font-size: clamp(0.5rem, 2.5vi, 4rem);
 }
 
 
@@ -352,18 +357,18 @@ p {
 }
 
 .case {
-    padding: 2vh 0;
+    padding: 2vi 0;
 }
 
 .case-title {
-    font-size: 3.7vh;
+    font-size: 3.7vi;
     padding: 1rem 0;
 }
 
 .learn-action {
     display: flex;
-    width: 26vh;
-    padding: 2.5vh 1vh;
+    width: 26vi;
+    padding: 2.5vi 1vi;
     justify-content: center;
     align-items: center;
     border: 0.5px #D9D9D9 solid;
@@ -373,12 +378,12 @@ p {
 .learn-action p {
     color: var(--second-color);
     font-weight: bold;
-    font-size: 2.6vh;
+    font-size: 2.6vi;
     width: 70%;
 }
 
 .arrow-up {
-    width: 2.5vh;
+    width: 2.5vi;
     height: auto;
 }
 
@@ -390,11 +395,15 @@ p {
 /*GOALS SECTION*/
 
 .goals-content {
-    padding-top: 2vh;
+    padding-top: 2vi;
+}
+
+.goals-content h2 {
+    font-size: 5vi;
 }
 
 .goals-content p{
-    padding: 3vh 0;
+    padding: 3vi 0;
 }
 
 .about-section {
@@ -402,25 +411,25 @@ p {
 }
 
 .about-section-inner{
-    padding-top: 7vh;
-    padding-bottom: 14vh;
+    padding-top: 7vi;
+    padding-bottom: 14vi;
 }
 
 .about-content h2 {
     color: var(--primary-color);
-    padding: 4vh 0;
+    padding: 4vi 0;
     width: 80%;
 }
 
 .about-content p {
     color: #D6D6D6;
-    padding-bottom: 4vh;
+    padding-bottom: 4vi;
 }
 
 .about-images {
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 5vi;
 }
 
 
@@ -429,65 +438,64 @@ p {
 /*REVIEWS*/
 
 .reviews-section {
-    padding: 10vh 0;
+    padding: 10vi 0;
 }
 
 .reviews-content h2{
     width: 70%;
-    font-size: 7vh;
+    font-size: 5vi;
 }
 
 .reviews-content p {
-    padding: 4vh 0;
-    font-size: 3.59vh;
+    padding: 4vi 0;;
 }
 
 .review-client img{
-    padding: 3vh 0;
+    padding: 3vi 0;
 }
 
 
 .open-quote {
-    width: 10vh;
+    width: 10vi;
     height: auto;
 }
 
 .client-text {
     font-weight: bold;
-    padding-bottom: 5vh;
-    font-size: 3.7vh ;
+    padding-bottom: 5vi;
+    font-size: 2vi;
 }
 
 .client h4 {
-    font-size: 3.75vh;
+    font-size: 2.3vi;
 }
 
 .client p {
-    font-size: 3.4vh;
-    padding: 1.5vh 0;
+    font-size: 2.3vi;
+    padding: 1.5vi 0;
 }
 
 .slide-bar {
-    width: 17vh;
+    width: 10vi;
     height: auto;
 }
 
 .general-review {
-    padding: 10vh 0;
+    padding: 10vi 0;
 }
 
 .general-review-content {
-    padding: 4vh 0;
+    padding: 4vi 0;
 }
 
 .general-review-content h2{
     width: 90%;
-    font-size: 7.5vh;
+    font-size: 7.5vi;
 }
 
 .general-review-content p{
-    font-size: 3.5vh;
-    padding: 4.5vh 0;
+    font-size: 3.5vi;
+    padding: 4.5vi 0;
 }
 
 .classifications {
@@ -498,8 +506,8 @@ p {
 
 .line {
     background-color: #D6D6D6;
-    height: 20vh;
-    width: 0.02vh;
+    height: 20vi;
+    width: 0.02vi;
 }
 
 .classification {
@@ -507,14 +515,14 @@ p {
 }
 
 .stars {
-    font-size: 8vh;
-    padding-left: 1vh;
+    font-size: 8vi;
+    padding-left: 1vi;
 }
 
 .enterprise {
-    padding: 1vh 0;
-    font-size: 3vh;
-    padding-left: 1vh;
+    padding: 1vi 0;
+    font-size: 3vi;
+    padding-left: 1vi;
 }
 
 
@@ -526,20 +534,19 @@ p {
 
 .start-section {
     text-align: center;
-    padding: 3vh 0;
+    padding: 3vi 0;
 }
 
 .image-logo {
     margin: 0 auto;
-    width: 15vh;
+    width: 15vi;
     height: auto;
-    padding: 2.7vh 0;
+    padding: 2.7vi 0;
 }
 
 
 .call-to-action p{
-    font-size: 3.2vh;
-    padding: 2vh 0;
+    padding: 2vi 0;
     font-weight: bold;
 }
 
@@ -554,12 +561,12 @@ p {
 .subscribe-section {
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    padding: 10vh 0;
+    gap: 3vi;
+    padding: 10vi 0;
 }
 
 .subscribe-section h3 {
-    font-size: 5vh;
+    font-size: 5vi;
     width: 60%;
 }
 
@@ -578,7 +585,7 @@ p {
 
 #subscribe-submit {
     width: 15%;
-    padding: 3vh 0;
+    padding: 3vi 0;
     border-radius: 10px 10px 0 0;
     height: auto;
     color: var(--primary-color);
@@ -590,8 +597,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5vh;
-    padding: 10vh 0;
+    gap: 5vi;
+    padding: 10vi 0;
 }
 
 .nav-conditions ul{
@@ -602,7 +609,7 @@ p {
 .nav-social-media ul{
     display: flex;
     justify-content: center;
-    gap: 5vh;
+    gap: 5vi;
 }
 
 
@@ -612,9 +619,9 @@ p {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        gap: 5vh;
-        padding: 5vh 0;
-        padding-top: 10vh;
+        gap: 5vi;
+        padding: 5vi 0;
+        padding-top: 10vi;
         width: 90%;
         margin: 0 auto;
         background: radial-gradient(circle, #f3f3f3 5%, #ffffff 75%);
@@ -649,9 +656,37 @@ p {
         width: auto;
         justify-content: space-between;
         display: flex;
-        gap: 5vh;
+        gap: 5vi;
     }
 
+
+    /*HERO*/
+    .hero-content {
+        max-width: 60%;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+
+    .hero-input form {
+        flex-direction: row;
+    }
+
+    .email-start {
+        border-radius: 60;
+        padding: 2rem 3rem;
+    }
+
+    .start-button {
+        width: 15rem;
+        padding: 1rem 1rem;
+    }
+
+    .hero-text p {
+        font-size: clamp(0.5rem, 1.5vi, 1.5rem);
+        width: 58%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
 
     /*SECTION OVERVIEW*/
 
@@ -663,10 +698,16 @@ p {
     .overview-content {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        align-content: baseline;
-        gap: 20vh;
-        padding: 5vh 0;
+        justify-content: space-between;
+        padding: 5vi 0;
+    }
+
+    #version-mobile {
+        display: none;
+    }
+
+    #version-desktop {
+        display: block;
     }
 
     .overview-main {
@@ -674,7 +715,7 @@ p {
     }
 
     .overview-text {
-        width: 70%;
+        font-size: 12vi;
         align-self: flex-end;
     }
 
@@ -688,9 +729,9 @@ p {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        gap: 5vh;
-        padding: 5vh 0;
-        padding-top: 10vh;
+        gap: 5vi;
+        padding: 5vi 0;
+        padding-top: 10vi;
         width: 90%;
         margin: 0 auto;
         background: radial-gradient(circle, #f3f3f3 5%, #ffffff 75%);
@@ -750,7 +791,7 @@ p {
         flex-direction: row;
         justify-content: space-between;
         align-content: center;
-        gap: 5vh;
+        gap: 5vi;
     }
 
     .about-content h2 {
@@ -760,7 +801,7 @@ p {
     .about-content p {
         margin: auto 0;
         padding-left: 10rem;
-        font-size: clamp(0.5rem, 2.3vh, 1.5rem);
+        font-size: clamp(0.5rem, 1.5vi, 1.5rem);
         max-width: 45rem;
     }
 
@@ -770,7 +811,7 @@ p {
     }
 
     .about-card {
-        width: 20vh;
+        width: 30vi;
     }
 
     .goals-content {
