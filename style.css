@@ -61,7 +61,7 @@ h2 {
 }
 
 p {
-    font-size: 2vh;
+    font-size: clamp(0.5rem,  2vh, 1.5rem);
 }
 
 .box {
@@ -75,7 +75,7 @@ p {
 }
 
 .second-text {
-    font-size: 2.7vh;
+    font-size: clamp(0.5rem,  2.7vh, 5rem);
     color: var(--second-font-color);
 }
 
@@ -182,13 +182,11 @@ p {
 
 .tag {
     background-color: var(--lighter-color-green);
-    padding: 0.5rem 0.4rem;
-    padding-left: 0.4rem;
-    margin-left: 0.1rem;
     font-weight: bold;
     color: var(--text-green);
-    font-size: 0.75rem;
-    width: 9rem;
+    font-size: clamp(0.5rem, 1.8vh, 2rem);
+    width: 30vh;
+    text-align: center;
 }
 
 .overview-main h1 {
@@ -199,9 +197,6 @@ p {
 .overview-text p{
     color: #E6E9ED;
     font-weight: 300;
-    font-size: 2.2vh;
-    padding: 1.2rem 0;
-    margin-bottom: 2.3rem;
 }
 
 
@@ -742,6 +737,13 @@ p {
     /*EXPECTED TEAM*/
     
 
+    /*goals - section*/
+
+    .goals-content {
+        display: flex;
+        flex-direction: row;
+    }
+
     /*ABOUT*/
     .about-content {
         display: flex;
@@ -769,5 +771,17 @@ p {
 
     .about-card {
         width: 20vh;
+    }
+
+    .goals-content {
+        justify-content: space-between;
+    }
+
+    .goals-content h2 {
+        width: 30%;
+    }
+
+    .goals-content p{
+        width: 40%;
     }
 }
