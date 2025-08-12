@@ -663,7 +663,8 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 3rem;
+        gap: 5rem;
+        padding-top: 2rem;
     }
 
     .logo {
@@ -678,6 +679,7 @@ p {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        align-items: center;
     }
 
     #menu-desktop ul{
@@ -685,6 +687,13 @@ p {
         justify-content: space-between;
         display: flex;
         gap: 1.5rem;
+    }
+
+    .sign-in {
+        background-color: var(--tertiary);
+        padding: 1rem 2rem;
+        color: var(--primary-color);
+        border-radius: 60px;
     }
 
 
