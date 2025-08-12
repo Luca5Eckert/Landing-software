@@ -199,7 +199,7 @@ p {
     background-color: var(--lighter-color-green);
     font-weight: bold;
     color: var(--text-green);
-    font-size: clamp(0.5rem, 3vi, 2rem);
+    font-size: clamp(0.5rem, 3vi, 1rem);
     text-align: center;
     align-self: flex-start;
 }
@@ -220,22 +220,21 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 4vi;
     padding-top: 3rem;
     padding-bottom: 1.5rem;
 }
 
 .info-numbers h1{
-    font-size: clamp(0.5rem, 7.4vi, 6.5rem);
+    font-size: clamp(0.5rem, 5vi, 5.5rem);
 }
 
 .overview-text p{
-    font-size: clamp(0.5rem, 3.7vi, 2rem);
+    font-size: clamp(0.5rem, 1.4vi, 1.5rem);
 }
 
 
 .info-numbers p {
-    font-size: clamp(0.5rem, 3.5vi, 2rem);
+    font-size: clamp(0.5rem, 1.4vi, 1.5rem);
 }
 
 #version-desktop {
@@ -630,28 +629,28 @@ p {
 }
 
 /*DESKTOP*/
-@media(min-width:1200px){
+@media(min-width:1440px){
     
     h1 {
         font-size: clamp(3rem, 5vi, 5rem);
     }
 
     h2 {
-        font-size: clamp(3rem, 5.5vi, 4.5rem);
+        font-size: clamp(2.5rem, 2.5vi, 4.5rem);
     }
 
     p {
-        font-size: clamp(0.5rem,  4.5vi, 4rem);
+        font-size: clamp(0.5rem,  1.5i, 2rem);
     }
     
     
     .second-text {
-        font-size: clamp(0.2rem,  4vi, 2.2rem);
+        font-size: clamp(0.2rem,  1.3vi, 2rem);
         color: var(--second-font-color);
     }
     
     .tag {
-        padding: 1rem 0.5rem;
+        padding: 0.5rem 0.5rem;
     }
 
     .hero-image {
@@ -726,7 +725,7 @@ p {
         flex-direction: row;
         justify-content: space-between;
         padding: 5vi 0;
-        gap: 5rem;
+        gap: 10rem;
     }
 
     #version-mobile {
@@ -747,9 +746,13 @@ p {
         max-width:50rem;
     }
 
-    .overview-content p {
+    .overview-text {
         padding: 0;
         margin: 0;
+    }
+
+    .overview-text p {
+        font-size: clamp(0.5rem, 1.1vi, 2rem);
     }
 
     /*BRANDINGS*/
@@ -808,6 +811,7 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         gap: 10rem;
     }
 
@@ -817,8 +821,25 @@ p {
 
     .team-text {
         flex: 1;
-        padding: 10rem 0;
     }
+    .image-team {
+        height: auto;
+    }
+
+    .team-title {
+        font-size: clamp(0.5rem, 2.5vi, 3rem);
+    }
+
+    .team-subheading{
+        font-size: clamp(0.5rem, 1.2vi, 3rem);
+
+    }
+
+    .team-text .second-text {
+        font-size: clamp(0.5rem, 1.2vi, 2rem);
+
+    }
+
 
     .card-team {
         left: 22rem;
@@ -826,16 +847,13 @@ p {
         bottom: 10rem;
     }
 
-    .card-team img{
-       width: 15rem;
-    }
 
     .card-text .team-number {
-        font-size: clamp(1rem,3vi,3rem);
+        font-size: clamp(1rem,1.3vi,2rem);
     }
 
     .card-text p{
-        font-size: clamp(1rem, 3vi, 3rem);
+        font-size: clamp(1rem, 1vi, 1rem);
     }
 
     /*ESTUDOS DE CASO*/
@@ -849,18 +867,20 @@ p {
         width: 90%;
         margin: 0 auto;
         padding: 5rem 0;
-        gap: 4rem;
+        column-gap: 6rem;
+        align-items: stretch;
+        padding: 10rem 0 20rem 0;
     }
     
     .cases-text {
         text-align: justify;
-        font-size: clamp(2rem, 2vi, 2.2rem);
+        font-size: clamp(0.5rem, 1.5vi, 2rem);
     }
     
     #case-heart {
         grid-area: case-heart;
-        padding-top: 0;
         align-self: flex-end;
+
     }
     
     #case-recovery {
@@ -871,15 +891,15 @@ p {
         margin-bottom: 1rem;
         text-align: center;
     }
-    
+  
     .case {
-        padding: 2rem 0;
+        padding: 0;
     }
     
     .case-title {
         padding-top: 1rem;
         padding-bottom: 2rem;
-        font-size: clamp(2rem, 4.5vi, 4.5rem);
+        font-size: clamp(2rem, 2vi, 2rem);
     }
     
     .learn-action {
@@ -909,9 +929,9 @@ p {
     .case-recovery {
         height: auto;
     }
-    
-    .cases-studies-section {
-        padding: 10rem 0 20rem 0;
+
+    .cases-content {
+        padding: 0;
     }
     
 
@@ -920,6 +940,10 @@ p {
     .goals-content {
         display: flex;
         flex-direction: row;
+        padding: 0;
+    }
+
+    .goals-content p {
         padding: 0;
     }
 
