@@ -155,7 +155,8 @@ p {
 
 #email-start {
     background-color: #F3F4F8;
-    width: 25rem;
+    width: 80vi;
+    max-width: 25rem;
     padding: 1.2rem;
     font-size: 1rem;
     color: var(--second-font-color);
@@ -704,6 +705,10 @@ p {
         padding: 2rem 3rem;
     }
 
+
+    .hero-image {
+        margin-bottom: -100px;
+    }
     
 
     .hero-text p {
@@ -716,6 +721,7 @@ p {
     /*SECTION OVERVIEW*/
 
     .overview-inner {
+        padding-top: 5rem;
         width: 70%;
         margin: 0 auto;
     }
