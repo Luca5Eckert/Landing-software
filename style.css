@@ -528,7 +528,15 @@ p {
 
 /*footer*/
 
-.nav-container {
+.nav-services {
+    display: none;
+}
+
+.nav-about {
+    display: none;
+}
+
+.nav-help {
     display: none;
 }
 
@@ -546,7 +554,7 @@ p {
 
 
 .call-to-action p{
-    padding: 3vi 0;
+    padding: 0.75rem 0;
     font-weight: bold;
 }
 
@@ -1093,5 +1101,106 @@ p {
         height: auto;
     }
 
+
+    /*FOOTER*/
+
+    .footer-inner {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .start-section {
+        padding: 0 1rem;
+    }
+
+    .line-footer {
+        width: 100%;
+        background-color: var(--neutral-color);
+        height: 1px;
+    }
+
+    .start-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .image-logo {
+        padding: 0;
+        margin: 0;
+        width: 4rem;
+    }
+
+    .call-to-action {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .call {
+        width: 20rem;
+    }
+
+    .call-to-action p {
+        font-size: clamp(0.5rem, 1.3vi, 1.3rem);
+    }
+
+    .button-get-start {
+        padding: 0.5rem 0.5rem;
+    }
+
+    .subscribe-section {
+        padding:  0;
+        gap: 1.2rem;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-services {
+        display: block;
+    }
+
+    .nav-container h5 {
+        font-size: clamp(0.5rem, 1.4vi, 2rem);
+        padding-bottom: 0.5rem;
+    }
+    
+    .nav-about {
+        display: block;
+    }
+    
+    .nav-help {
+        display: block;
+    }
+    
+
+    .nav-container ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: clamp(0.5rem, 1.35vi, 2rem);
+    }
+
+
+    .footer-copyright-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-conditions ul {
+        gap: 1.4rem;
+    }
+
+    
 
 }
