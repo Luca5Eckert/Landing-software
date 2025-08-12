@@ -23,7 +23,7 @@ O projeto consiste em construir uma landing page baseada em um protótipo do Fig
 
 ## Créditos
 
-- Design original: [Figma]([https://figma.com](https://www.figma.com/design/S2F92XUtn4QH4Qxern94IZ/Design-Landing-Software?node-id=0-1&t=oNkDhimFQbE97F6b-1)) (link do protótipo pode ser adicionado aqui)
+- Design original: [Figma]([https://figma.com](https://www.figma.com/design/S2F92XUtn4QH4Qxern94IZ/Design-Landing-Software?node-id=0-1&t=oNkDhimFQbE97F6b-1))
 - Desenvolvedor: [Luca5Eckert](https://github.com/Luca5Eckert)
 
 ---
