@@ -51,7 +51,7 @@ ul li {
 }
 
 h1 {
-   font-size: clamp(0.7rem, 9vi, 4rem); 
+   font-size: clamp(0.7rem, 9vi, 3rem); 
    font-weight: bold;
 }
 
@@ -61,17 +61,17 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(0.2rem, 6.5vi, 3rem);
+    font-size: clamp(0.2rem, 6.5vi, 2rem);
 
 }
 
 h4 {
-    font-size: clamp(0.2rem, 4vi, 2rem);
+    font-size: clamp(0.2rem, 4vi, 1rem);
 
 }
 
 p {
-    font-size: clamp(0.5rem,  4.5vi, 1rem);
+    font-size: clamp(0.5rem,  4vi, 1rem);
 }
 
 .box {
@@ -440,7 +440,8 @@ p {
 .about-images {
     display: flex;
     flex-direction: column;
-    gap: 5vi;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 
@@ -805,11 +806,79 @@ p {
     /*EXPECTED TEAM*/
     
 
+
+    /*ESTUDOS DE CASO*/
+    .cases-studies-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+         "text-case case-recovery"
+         "case-heart case-recovery"
+         "case-heart case-recovery";
+        width: 90%;
+        margin: 0 auto;
+        padding: 5rem 0;
+        gap: 4rem;
+    }
+    
+    .cases-text {
+        text-align: justify;
+        font-size: clamp(2rem, 2vi, 2.2rem);
+    }
+    
+    #case-heart {
+        grid-area: case-heart;
+        padding-top: 0;
+    }
+    
+    #case-recovery {
+        grid-area: case-recovery;
+    }
+    
+    #tag-case {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .case {
+        padding: 2rem 0;
+    }
+    
+    .case-title {
+        padding: 1rem 0;
+        font-size: clamp(2rem, 4.5vi, 4.5rem);
+    }
+    
+    .learn-action {
+        display: inline-flex;
+        border: 0.5px #D9D9D9 solid;
+        border-radius: 2rem;
+        padding: 1rem 1.7rem;
+        gap: 1.2rem;
+    }
+    
+    .learn-action p {
+        color: var(--second-color);
+        font-weight: bold;
+    }
+    
+    .arrow-up {
+        width: 0.75rem;
+        height: auto;
+    }
+    
+    .case-recovery {
+        height: auto;
+    }
+    
+    
+
     /*goals - section*/
 
     .goals-content {
         display: flex;
         flex-direction: row;
+        padding: 0;
     }
 
     /*ABOUT*/
