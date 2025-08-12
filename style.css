@@ -803,9 +803,40 @@ p {
         display: block;
     }
 
-    /*EXPECTED TEAM*/
-    
+    /*EXPERTED TEAM*/
+    .team-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10rem;
+    }
 
+    .container-team {
+        flex: 1;
+    }
+
+    .team-text {
+        flex: 1;
+        padding: 10rem 0;
+    }
+
+    .card-team {
+        left: 22rem;
+        right: -5rem;
+        bottom: 10rem;
+    }
+
+    .card-team img{
+       width: 15rem;
+    }
+
+    .card-text .team-number {
+        font-size: clamp(1rem,3vi,3rem);
+    }
+
+    .card-text p{
+        font-size: clamp(1rem, 3vi, 3rem);
+    }
 
     /*ESTUDOS DE CASO*/
     .cases-studies-section {
