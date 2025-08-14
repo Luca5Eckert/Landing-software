@@ -259,7 +259,7 @@ p {
 }
 
 .branding {
-    padding: 7.25vi 9vi;
+    padding: 3rem 4rem;
     border-radius: 16px;
     background-color: var(--primary-color);
     box-shadow: var(--second-font-color);
@@ -652,6 +652,10 @@ p {
         background: radial-gradient(circle, #f3f3f3 5%, #ffffff 75%);
         grid-template-areas: 
         "google microsoft fedex amazon";
+    }
+
+    .branding {
+        padding: 2rem 2rem;
     }
 }
 
