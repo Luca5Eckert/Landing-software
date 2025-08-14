@@ -734,11 +734,16 @@ p {
         padding: 5rem 0;
     }
 
-    .hero-input form {
+
+    .hero-input {
+        margin: 0 auto;
         width: 50rem;
         max-width: 60rem;
+    }
+
+    .hero-input form {
         flex-direction: row;
-        justify-content: start;
+        justify-content: center;
     }
 
     .email-start {
