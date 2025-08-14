@@ -67,11 +67,12 @@ h3 {
 
 h4 {
     font-size: clamp(0.2rem, 4vi, 1rem);
+    font-weight: 450;
 
 }
 
 p {
-    font-size: clamp(0.5rem,  4vi, 1rem);
+    font-size: clamp(0.5rem,  4.5vi, 1rem);
 }
 
 .box {
@@ -212,7 +213,8 @@ p {
 
 .overview-text p{
     color: #E6E9ED;
-    padding: 1rem 0;
+    padding: 0.4rem 0;
+    font-size: clamp(0.5rem, 3.7vi, 1.5rem)
 }
 
 
@@ -226,16 +228,12 @@ p {
 }
 
 .info-numbers h1{
-    font-size: clamp(0.5rem, 5vi, 5.5rem);
-}
-
-.overview-text p{
-    font-size: clamp(0.5rem, 1.4vi, 1.5rem);
+    font-size: clamp(0.5rem, 9vi, 3rem);
 }
 
 
 .info-numbers p {
-    font-size: clamp(0.5rem, 1.4vi, 1.5rem);
+    font-size: clamp(0.5rem, 4vi, 1.5rem);
 }
 
 #version-desktop {
@@ -256,18 +254,18 @@ p {
         "fedex amazon"
         "google microsoft";
     gap: 10%;
-    padding: 2rem 0;
-    padding-top: 10vi;
-    background: radial-gradient(circle, #f3f3f3 5%, #ffffff 75%);
+    padding: 6rem 0;
+    background: radial-gradient(circle, #f3f3f3 5%, #ffffff 85%);
 }
 
 .branding {
-    padding: 25% 25%;
+    padding: 7.25vi 9vi;
     border-radius: 16px;
     background-color: var(--primary-color);
     box-shadow: var(--second-font-color);
     align-content: center;
     justify-content: center;
+    max-width: 15rem;
 }
 
 .branding img{
@@ -308,17 +306,26 @@ p {
 .card-team {
     height: auto;
     display: flex;
-    padding: 4%;
-    border-radius: 1rem;
+    justify-content: space-evenly;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
     height: auto;
     position: absolute;
     z-index: 10;
     bottom: -10%;
     left: 20%;
     background-color: var(--primary-color);
-    gap: 0.5rem;
+    gap: 0.85rem;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.team-number {
+    font-size: clamp(0.3rem, 4.5vi, 2rem);
+}
+
+.card-text p {
+    font-size: clamp(0.3rem, 3vi, 1.5rem);
 }
 
 .card-team img{
@@ -335,6 +342,11 @@ p {
     font-size: clamp(0.5rem, 4.6vi, 2.2rem);
 }
 
+.cases-text {
+    font-size: clamp(0.2rem,  4.75vi, 2rem);
+}
+
+
 
 /*ESTUDOS DE CASO*/
 .cases-studies-section {
@@ -347,11 +359,11 @@ p {
     width: 90%;
     margin: 0 auto;
     padding: 5rem 0;
+    gap: 2.2rem;
 }
 
 .cases-content {
     grid-area: text-case;
-    padding-bottom: 2rem;
 }
 
 .cases-content h2 {
@@ -371,10 +383,6 @@ p {
 #tag-case {
     margin-bottom: 1rem;
     text-align: center;
-}
-
-.case {
-    padding: 2rem 0;
 }
 
 .case-title {
@@ -462,26 +470,36 @@ p {
 }
 
 .costumer {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
+
+.client {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding-bottom: 2.5rem;
+}
 
 .open-quote {
     width: 10vi;
     height: auto;
+    padding-bottom: 1rem;
 }
 
 .client-text {
+    font-size: clamp(0.2rem, 4.75vi, 1.5rem);
     font-weight: bold;
     padding-bottom: 2rem;
 }
 
-.client p {
-    padding: 1rem 0;
+.name {
+    font-size: clamp(0.2rem, 4.75vi, 1.5rem);
+    font-weight: bolder;
 }
 
 .slide-bar {
-    width: 4rem;
+    width: 5rem;
     height: auto;
 }
 
@@ -515,13 +533,13 @@ p {
 }
 
 .stars {
-    font-size: clamp(0.5rem, 8vi, 3rem);
+    font-size: clamp(0.5rem, 10vi, 3rem);
     padding-left: 1vi;
 }
 
 .enterprise {
     padding: 1vi 0;
-    font-size: 3vi;
+    font-size: clamp(0.5rem, 4vi, 2rem);
     padding-left: 1vi;
 }
 
@@ -542,7 +560,7 @@ p {
 
 .start-section {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
 }
 
 .image-logo {
@@ -604,7 +622,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5vi;
+    gap: 2rem;
     padding: 10vi 0;
 }
 
@@ -616,7 +634,7 @@ p {
 .nav-social-media ul{
     display: flex;
     justify-content: center;
-    gap: 5vi;
+    gap: 2rem;
 }
 
 
@@ -847,6 +865,7 @@ p {
     .team-text {
         flex: 1;
     }
+
     .image-team {
         height: auto;
     }
@@ -897,10 +916,11 @@ p {
         padding: 10rem 0 20rem 0;
     }
     
-    .cases-text {
+    .cases-text p{
         text-align: justify;
-        font-size: clamp(0.5rem, 1.5vi, 2rem);
+        font-size: clamp(0.2rem,  1.3vi, 2rem);
     }
+
     
     #case-heart {
         grid-area: case-heart;
