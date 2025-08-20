@@ -977,16 +977,17 @@ p {
         align-content: space-between;
         border: 0.5px #D9D9D9 solid;
         border-radius: 2rem;
-        padding: 2rem 3rem;
+        padding: 1rem 2rem;
         gap: 1.2rem;
     }
 
     .arrow-up {
-        width: 2rem;
+        width: 1.5rem;
     }
 
     .learn-action h4 {
-        font-size: clamp(0.2rem, 4vi, 2rem)
+        font-size: clamp(0.2rem, 1.5vi, 2rem);
+        max-width: auto 0;
     }
     
     .learn-action p {
