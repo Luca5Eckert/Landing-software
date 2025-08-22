@@ -44,6 +44,7 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+    font-size: clamp(0.5rem,  4.5vi, 1rem);
 }
 
 ul li {
@@ -196,7 +197,7 @@ p {
 }
 
 .tag {
-    padding: 0.5rem 0.75rem;
+    padding: 0.4rem 0.75rem;
     display: inline-block;
     background-color: var(--lighter-color-green);
     font-weight: bold;
@@ -209,6 +210,7 @@ p {
 .overview-main h1 {
     color: var(--primary-color);
     width: 20%;
+    padding-top: 1rem;
 }
 
 .overview-text p{
@@ -259,7 +261,7 @@ p {
 }
 
 .branding {
-    padding: 3rem 4rem;
+    padding: 19% 20%;
     border-radius: 16px;
     background-color: var(--primary-color);
     box-shadow: var(--second-font-color);
@@ -322,6 +324,7 @@ p {
 
 .team-number {
     font-size: clamp(0.3rem, 4.5vi, 2rem);
+    font-weight: bold;
 }
 
 .card-text p {
@@ -329,7 +332,8 @@ p {
 }
 
 .card-team img{
-    width: 5rem;
+    width: 5.5vh;
+    max-width: 7rem;
 }
 
 .team-title {
@@ -657,6 +661,19 @@ p {
     .branding {
         padding: 2rem 2rem;
     }
+
+    .card-team img{
+        width: 10vh;
+        max-width: 10rem;    
+    }
+
+    .card-team {
+        bottom: 0.25rem;
+        width: 50vi;
+        max-width: 25rem;
+        height: auto;
+    }
+
 }
 
 /*DESKTOP*/
@@ -827,12 +844,12 @@ p {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        gap: 5vi;
+        gap: 2vi;
         padding: 5vi 0;
         padding-top: 10vi;
         width: 90%;
         margin: 0 auto;
-        background: radial-gradient(circle, #f3f3f3 5%, #ffffff 75%);
+        background: none;
         grid-template-areas: 
         "google microsoft oyo fedex amazon ola";
     }
@@ -841,7 +858,7 @@ p {
         padding: 19% 30%;
         border-radius: 16px;
         background-color: var(--primary-color);
-        box-shadow: var(--second-font-color);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         align-content: center;
         justify-content: center;
     }
@@ -912,17 +929,26 @@ p {
     .card-team {
         left: 22rem;
         right: -5rem;
-        bottom: 10rem;
+        bottom: 3rem;
+        max-width: 20rem;
+        width: 20vi;
+        justify-content: space-between;
+    }
+
+      .card-team img {
+        width: 9vh;
+        max-width: 10rem;
     }
 
 
     .card-text .team-number {
-        font-size: clamp(1rem,1.3vi,2rem);
+        font-size: clamp(1rem, 1.5vi,2rem);
     }
 
     .card-text p{
         font-size: clamp(1rem, 1vi, 1rem);
     }
+
 
     /*ESTUDOS DE CASO*/
     .cases-studies-section {
